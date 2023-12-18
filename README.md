@@ -1,5 +1,7 @@
+## Steps to create a RHDH dynamic frontend wrapper plugin
+
 1. Clone this repository
-2. Create app-config.yaml at the project root with the following contents:
+2. Create `app-config.yaml` at the project root with the following contents:
 ```
 app:
   baseUrl: "httpd://rh1plugin.com"
