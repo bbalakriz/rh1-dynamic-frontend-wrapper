@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "./dist-types/src",
+    "rootDir": "./src"
+  },
+  "include": ["src/index.ts"],
+  "exclude": ["node_modules"]
+}
