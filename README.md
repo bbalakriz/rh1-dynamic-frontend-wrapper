@@ -1,7 +1,7 @@
 ## Steps to create a RHDH dynamic frontend wrapper plugin
 
-1. Clone this repository
-2. Create `app-config.yaml` at the project root with the following contents:
+1. Clone this repository.
+2. Create `app-config.yaml` at the project root with the following contents.
 ```
 app:
   baseUrl: "https://plugin.com"
@@ -14,7 +14,7 @@ yarn build
 yarn run export-dynamic
 yarn publish 
 ```
-4. Setup RHDH using the Helm chart available in OpenShift. Use the following configuration. Note: Replace the value of `clusterRouterBase` with a relevant value:
+4. Setup RHDH using the Helm chart available in OpenShift. Use the following configuration. Note: Replace the value of `clusterRouterBase` with a relevant value.
 ```
 global:
   auth:
