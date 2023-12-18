@@ -4,7 +4,7 @@
 2. Create `app-config.yaml` at the project root with the following contents:
 ```
 app:
-  baseUrl: "httpd://rh1plugin.com"
+  baseUrl: "https://plugin.com"
 ```
 3. Execute the following command:
 ```
@@ -14,7 +14,7 @@ yarn build
 yarn run export-dynamic
 yarn publish 
 ```
-4. Create a RHDH setup using Helm charts with the following configuration after replaceing the value of `clusterRouterBase` with the relevant value:
+4. Setup RHDH using the Helm chart available in OpenShift. Use the following configuration. Note: Replace the value of `clusterRouterBase` with a relevant value:
 ```
 global:
   auth:
@@ -204,3 +204,5 @@ upstream:
       podSecurityContext:
         enabled: false
 ```
+5. Log into RHDH portal. Access the `Overview` tab of the catalog item 'RH1 Dynamic Wrapper Plugin`. You should see a quote on the right side of the `Links` panel.
+6. On the side navigation bar that's available on the left side of the portal, you should see a link called "Quote". Click that to see a quote displayed on a new page. 
